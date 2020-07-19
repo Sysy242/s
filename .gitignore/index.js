@@ -365,7 +365,6 @@ client.on("ready", () => {
                                 message.channel.send(embed);  
                             }
 
-                            const réponse = JSON.parse(fs.readFileSync('./pulsar.json', "utf8"));
                             const values = Object.values(réponse)
                             if(message.content === ":pulsar") {
                                if(message.channel.id === "733987124373880934") {   
