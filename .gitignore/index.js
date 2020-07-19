@@ -237,7 +237,62 @@ var json = [
     "https://discord.gift/TDKFha8TmVaw2nTGHjdys4jb",
     "https://discord.gift/w7Xsxmqz6K5VTDQ84xDG72Xn",
     "https://discord.gift/EWjAV5f6kqQXQfKkpExnywwx",
-    "https://discord.gift/nFkKwrPhupJfe7cwaKkZvxAN"
+    "https://discord.gift/nFkKwrPhupJfe7cwaKkZvxAN",
+    "https://discord.gift/PbAP5wePpQxECqsnGgXKHuat",
+    "https://discord.gift/JesTnZBd4ke77VU6m9vGsTY3",
+    "https://discord.gift/CBRng8m2ntJn75x9QtQBemJM",
+    "https://discord.gift/gvaU5AQNQczy2YjRq6MPcQww",
+    "https://discord.gift/bTUgpApnu5jQKDDxyZzukssC",
+    "https://discord.gift/WwMGcpu9Ez5s8vD7NW97Vp9M",
+    "https://discord.gift/hh8kKRVm6TNcqf9XjxG2eeQU",
+    "https://discord.gift/UCc8AQWggUTDgagqWwwPm5Tb",
+    "https://discord.gift/BFBfeyAEBNqw4ccQXK2YCY3P",
+    "https://discord.gift/pTk6qqEFyRXQwQMGnjtfPB27",
+    "https://discord.gift/BFdjjp4e6yQ4RqZFCVQvR87N",
+    "https://discord.gift/NnWJmCHRkgKTwKv5f4QafNnr",
+    "https://discord.gift/9M9UkBJGNJc5KGD7n3tKA32h",
+    "https://discord.gift/XDEnv8KzS7F3bJxP9brNJprJ",
+    "https://discord.gift/MdCrqjKhwjkJk7dSnAMhJhAv",
+    "https://discord.gift/zazgHUTfHTmQxBtKP75CEaSq",
+    "https://discord.gift/p2vreJbZVa6dtT7ghBzKpTuB",
+    "https://discord.gift/xd5EGgcp9k9HvAj2snnDjxf7",
+    "https://discord.gift/KQEGcaswyYRHyYaU7RBQx2KC",
+    "https://discord.gift/VHhKN7wn29ZgY2vw66SQ6k8t",
+    "https://discord.gift/2epNB76mrfmrer7DT8PcvA2Q",
+    "https://discord.gift/GUAry6TnUBZuFD2WPVMc4Jkk",
+    "https://discord.gift/3HGpJYEeWg5AykrvcVSPDdjw",
+    "https://discord.gift/ZH8XqueyY5xtR2pRjrTzc9Sb",
+    "https://discord.gift/3K3spJxMBtBTvTqgXrGNJq6b",
+    "https://discord.gift/TQ84vqagQtkB9S6wjBMBJFC9",
+    "https://discord.gift/75xDfN2k9geRRqVUPxHFJsen",
+    "https://discord.gift/tbZDfhZYWHYkTqg2mD2mykkV",
+    "https://discord.gift/qRdvwNmd8UgEeR82vSUpyK4G",
+    "https://discord.gift/GbUpxWACkGc5yNnuUY7HJwXK",
+    "https://discord.gift/Bm8ZwRYexFhBfEQXy2dEBA88",
+    "https://discord.gift/xFjTdUgcEXRsfZuytU8UMNhG",
+    "https://discord.gift/TtRzj94sJeutz8TttAwkFpvm",
+    "https://discord.gift/3qUmZzrRtxDE22zytGfmESwJ",
+    "https://discord.gift/Tg3zDK2MWUcnHY7AjyScmA2z",
+    "https://discord.gift/vgp8gp3gTSSAtUpYPbRBHNrD",
+    "https://discord.gift/czyBn3jKbKj3BHMZM4PNb5UU",
+    "https://discord.gift/jNd5hV4dPW8eaVCWGKempacc",
+    "https://discord.gift/gFQwCXNN6d6wJzHGKExqmFyq",
+    "https://discord.gift/UBXG9mEvgFHDe7ExJqzezTJt",
+    "https://discord.gift/RCNgsetnpaxqgQNWP44b2nWN",
+    "https://discord.gift/8ftQcM8g6DTakAdqqjwU3ATY",
+    "https://discord.gift/GddZK6jnZveqCCtnGSvQgSQm",
+    "https://discord.gift/sZUAhKhA4cNHfwUheDX4F4AN",
+    "https://discord.gift/xt9HReP5PPaMWyEyYPEY7wsJ",
+    "https://discord.gift/XtbDXN8kkujFxcTr78kamW8D",
+    "https://discord.gift/XUrG56DDnUWJ7B2HQZusxxmp",
+    "https://discord.gift/4G7SD5SCg7MPGdQZNYYb5bfs",
+    "https://discord.gift/a5vbQZ5aevdNmsGcff2zNdy3",
+    "https://discord.gift/eBNbkjAHxcDNs8RDegnJ8eQhs",
+    "https://discord.gift/CJ9EcH9prGr3DkemPJunXy6k",
+    "https://discord.gift/Wdthxz2PT8K3wEA8srt7HZVc",
+    "https://discord.gift/x9Y3cAVhPwsVe2bVP5dJ3BpZ",
+    "https://discord.gift/R2R2r9ZJnecCKF5CpxFpgp9T",
+    "https://discord.gift/e3nBuSrMgRcEkjJhkD8bghCU"
 ]
 console.log(json.length + " Pulsar loaded")
 const Discord = require("discord.js");
@@ -365,6 +420,8 @@ client.on("ready", () => {
                                 message.channel.send(embed);  
                             }
 
+                            const réponse = JSON.parse(fs.readFileSync('./pulsar.json', "utf8"));
+                            const values = Object.values(réponse)
                             if(message.content === ":pulsar") {
                                if(message.channel.id === "733987124373880934") {   
 
